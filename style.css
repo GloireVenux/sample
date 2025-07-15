@@ -101,6 +101,10 @@ article img {
     right: 8px;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 #mobile-nav-input:checked ~ .overlay {
     display: block;
     opacity: 1;
@@ -118,5 +122,6 @@ article img {
 
     .mobile-nav {
         margin-left: 8px;
+        display: block;
     }
 }
