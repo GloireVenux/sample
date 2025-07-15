@@ -65,6 +65,8 @@ article img {
     right: 0;
     left: 0;
     display: none;
+    opacity: 0;
+    transition: opacity linear 0.2s;
 }
 
 .mobile-menu {
@@ -75,6 +77,8 @@ article img {
     width: 300px;
     background-color: #fff;;
     transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
 }
 
 .mobile-nav-list {
@@ -99,10 +103,12 @@ article img {
 
 #mobile-nav-input:checked ~ .overlay {
     display: block;
+    opacity: 1;
 }
 
 #mobile-nav-input:checked ~.mobile-menu {
     transform: translateX(0);
+    opacity: 1;
 }
 
 @media (max-width: 1023px) {
